@@ -7,10 +7,10 @@ import (
 	golangGrpc "google.golang.org/grpc"
 	"google.golang.org/grpc/codes"
 
-	"github.com/platinummonkey/go-concurrency-limits/core"
-	"github.com/platinummonkey/go-concurrency-limits/limit"
-	"github.com/platinummonkey/go-concurrency-limits/limiter"
-	"github.com/platinummonkey/go-concurrency-limits/strategy"
+	"github.com/systay/go-concurrency-limits/core"
+	"github.com/systay/go-concurrency-limits/limit"
+	"github.com/systay/go-concurrency-limits/limiter"
+	"github.com/systay/go-concurrency-limits/strategy"
 )
 
 // ResponseType is the type of token release that should be specified to the limiter algorithm.
@@ -75,12 +75,12 @@ func defaultServerResponseClassifier(
 }
 
 type interceptorConfig struct {
-	name                    string
-	tags                    []string
-	limiter                 core.Limiter
+	name                            string
+	tags                            []string
+	limiter                         core.Limiter
 	limitExceededResponseClassifier LimitExceededResponseClassifier
-	serverResponseClassifer ServerResponseClassifier
-	clientResponseClassifer ClientResponseClassifier
+	serverResponseClassifer         ServerResponseClassifier
+	clientResponseClassifer         ClientResponseClassifier
 }
 
 // InterceptorOption represents an option that can be passed to the grpc unary

@@ -8,7 +8,7 @@ import (
 
 	gometrics "github.com/rcrowley/go-metrics"
 
-	"github.com/platinummonkey/go-concurrency-limits/core"
+	"github.com/systay/go-concurrency-limits/core"
 )
 
 const defaultMetricPrefix = "limiter."

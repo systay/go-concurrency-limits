@@ -8,9 +8,9 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/platinummonkey/go-concurrency-limits/core"
-	"github.com/platinummonkey/go-concurrency-limits/limit"
-	"github.com/platinummonkey/go-concurrency-limits/measurements"
+	"github.com/systay/go-concurrency-limits/core"
+	"github.com/systay/go-concurrency-limits/limit"
+	"github.com/systay/go-concurrency-limits/measurements"
 )
 
 const (

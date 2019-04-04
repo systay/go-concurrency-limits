@@ -8,9 +8,9 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/platinummonkey/go-concurrency-limits/core"
-	"github.com/platinummonkey/go-concurrency-limits/limit"
-	"github.com/platinummonkey/go-concurrency-limits/strategy"
+	"github.com/systay/go-concurrency-limits/core"
+	"github.com/systay/go-concurrency-limits/limit"
+	"github.com/systay/go-concurrency-limits/strategy"
 )
 
 type testLifoQueueContextKey int

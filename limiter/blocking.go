@@ -3,11 +3,12 @@ package limiter
 import (
 	"context"
 	"fmt"
-	"github.com/platinummonkey/go-concurrency-limits/limit"
 	"sync"
 	"time"
 
-	"github.com/platinummonkey/go-concurrency-limits/core"
+	"github.com/systay/go-concurrency-limits/limit"
+
+	"github.com/systay/go-concurrency-limits/core"
 )
 
 const longBlockingTimeout = time.Hour * 24 * 30 * 12 * 100 // 100 years
